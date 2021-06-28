@@ -1,0 +1,7 @@
+*.swp
+
+.cache
+build
+dist
+node_modules
+tmp

@@ -1,0 +1,47 @@
+{
+  "name": "vendor-listing-page",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "npm run make-config && npm run make-data && react-scripts start",
+    "build": "npm run make-config && npm run make-data && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "make-config": "node scripts/make-config.js",
+    "make-data": "node scripts/make-data.js"
+  },
+  "keywords": [],
+  "author": "Draggor",
+  "license": "AGPL3",
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "fuse.js": "^6.4.6",
+    "knuth-shuffle-seeded": "^1.0.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-responsive-embed": "^2.1.0",
+    "react-scripts": "latest"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "csv-parse": "^4.16.0",
+    "prettier": "2.3.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+# Main config
+color = "#03dbfc"
+title = "Some Event's Vendors"
+
+[data]
+filename = 'vendor-details.csv' # A file with this name should be in the data/ directory
+tag_separator = '||' # If your file has a tags column, separate your tags with this, or change it
+
+# You probably don't want to change these unless you know what you're doing
+[csv]
+delimiter = ','
+escape = '"'
+
+# The default streaming widget was tested with an owncast embed, others probably work
+[streaming]
+enabled = false
+src = 'https://some.owncastwebsite.com/embed/video'
+title = 'Stream Title'
+
+# Change these as appropriate
+[copyright]
+url = 'https://draggor.me/'
+text = 'draggor.me'
