@@ -25,6 +25,7 @@ import shuffle from "knuth-shuffle-seeded";
 
 import config from "./config"
 import Album from "./Album";
+import Copyright from './Copyright';
 import TagSelect from "./TagSelect";
 import { data, vendorsAlpha, vendorsAlphaReverse, tags } from "./loadData";
 
@@ -34,19 +35,6 @@ const fuseOptions = {
   keys: ["display_name"],
 };
 const fuse = new Fuse(data, fuseOptions);
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href={config.copyright.url}>
-        {config.copyright.text}
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -202,7 +190,7 @@ const App = () => {
         >
           Created by Draggor
         </Typography>
-        <Copyright />
+        <Copyright url={config.copyright.url} text={config.copyright.text} />
       </footer>
       {/* End footer */}
     </>
