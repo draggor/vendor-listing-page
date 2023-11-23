@@ -134,18 +134,6 @@ const App = () => {
         </Toolbar>
       </AppBar>
       <main>
-        <div style={{ maxWidth: "720px", margin: "0 auto", paddingBottom: 16 }}>
-          { config.streaming.enabled && (
-            <ResponsiveEmbed
-              src="https://firr.cam/embed/video"
-              title="Anthrocn Artist Alley"
-              frameBorder="0"
-              referrerPolicy="origin"
-              scrolling="no"
-              allowFullScreen
-            ></ResponsiveEmbed>
-          )}
-        </div>
         <Grid container justify="center" maxwidth="xl">
           <Grid item>
             <TextField
